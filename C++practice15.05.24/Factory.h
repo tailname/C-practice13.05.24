@@ -1,6 +1,5 @@
-#ifndef INCLUDE_FACTORY_H_
-#define INCLUDE_FACTORY_H_
-
+  // Copyright 2024 Matvey Pavlov
+#pragma once
 #include <string>
 #include <vector>
 #include <map>
@@ -20,4 +19,3 @@ class Factory_Staff {
     std::vector<Employee*> GetStaff();
 };
 
-#endif  // INCLUDE_FACTORY_H_

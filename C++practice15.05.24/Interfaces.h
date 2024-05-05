@@ -1,5 +1,5 @@
-#ifndef INCLUDE_INTERFACES_H_
-#define INCLUDE_INTERFACES_H_
+  // Copyright 2024 Matvey Pavlov
+#pragma once
 class Heading {
  public:
     virtual ~Heading() = default;
@@ -20,4 +20,3 @@ class Project_Budget {
     virtual int calc_pro_additions(int bonus) = 0;
 };
 
-#endif  // INCLUDE_INTERFACES_H_

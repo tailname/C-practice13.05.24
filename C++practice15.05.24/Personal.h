@@ -1,5 +1,5 @@
-#ifndef INCLUDE_PERSONAL_H_
-#define INCLUDE_PERSONAL_H_
+  // Copyright 2024 Matvey Pavlov
+#pragma once
 #include <iostream>
 #include <string>
 #include <utility>
@@ -32,4 +32,3 @@ class Cleaner : public Personal {
             int work_time, int salary, Positions position);
     int calc_salary() override;
 };
-#endif  // INCLUDE_PERSONAL_H_

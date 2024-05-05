@@ -1,6 +1,5 @@
-#ifndef INCLUDE_EMPLOYEE_H_
-#define INCLUDE_EMPLOYEE_H_
-
+  // Copyright 2024 Matvey Pavlov
+#pragma once
 #include <string>
 #include <vector>
 #include<iostream>
@@ -49,5 +48,3 @@ class Employee {
                                            "driver",
                                            "tester"};
 };
-
-#endif  // INCLUDE_EMPLOYEE_H_

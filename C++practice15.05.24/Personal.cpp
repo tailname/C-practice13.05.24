@@ -1,7 +1,10 @@
+  // Copyright 2024 Matvey Pavlov
 #include"Personal.h"
 
 Personal::Personal(int id, std::string name,
-    int workTime, int salary, Positions position):Employee(id,name,workTime,position){
+                   int workTime, int salary,
+                   Positions position):
+                   Employee(id, name, workTime, position) {
     this->salary = salary;
 }
 int Personal::calc_bonus_salary(int bonus) {
