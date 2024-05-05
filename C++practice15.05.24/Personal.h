@@ -11,7 +11,6 @@ class Personal : public Employee, public Work_Base_Time {
     Personal(int id, std::string name,
              int workTime, int salary, Positions position);
     int calc_bonus_salary(int bonus = 0) override;
-    void print_info() override;
     int calc_base_salary(int salary, int work_time_salary)  override;
  protected:
     int bonus;

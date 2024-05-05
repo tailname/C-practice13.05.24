@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include<iostream>
 
 enum Positions {
     programmer,
@@ -32,7 +33,7 @@ class Employee {
              int work_time, Positions position);
     int GetID() const;
     virtual int calc_salary() = 0;
-    virtual void print_info() = 0;
+    void print_info();
  private:
     int id;
  protected:

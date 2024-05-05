@@ -8,6 +8,7 @@
 #include <fstream>
 #include "Personal.h"
 #include"Engineer.h"
+#include"Manager.h"
 class Factory_Staff {
  private:
      Positions SetPosition(std::string pos);

@@ -7,11 +7,7 @@ Personal::Personal(int id, std::string name,
 int Personal::calc_bonus_salary(int bonus) {
     return bonus * salary;
 }
-void Personal::print_info() {
-    std::cout << "ID - " << GetID() << " Name - " << name << " Time at work - " <<
-                 work_time << " h " << " Salary - " << salary << " Position - " <<
-                 position;
-}
+
 int Personal::calc_base_salary(int salary, int work_time_salary) {
     return salary * work_time_salary;
 }
