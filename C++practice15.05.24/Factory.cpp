@@ -1,5 +1,13 @@
   // Copyright 2024 Matvey Pavlov
 #include"Factory.h"
+Factory_Staff::~Factory_Staff() {
+    for (int i = 0; i < projects.size(); ++i) {
+        delete projects[i];
+    }
+    for (int i = 0; i < empl.size(); ++i) {
+        delete empl[i];
+    }
+}
 void Factory_Staff::MakeProjects() {
     std::ifstream ifs("projects_info.txt");
     int budget, id, numb_of_empl;
@@ -156,6 +164,7 @@ void Factory_Staff::make_staff() {
         }
         }
     }
+    ifs.close();
 }
 
 std::vector<Employee*> Factory_Staff::GetStaff() {

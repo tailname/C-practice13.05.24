@@ -28,6 +28,7 @@ class Project {
 };
 class Employee {
  public:
+    virtual ~Employee() = default;
     Employee(int id, std::string name,
              int work_time, Positions position);
     int GetID() const;

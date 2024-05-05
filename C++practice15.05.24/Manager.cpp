@@ -5,6 +5,7 @@ ProjectManager::ProjectManager(const int& id, const std::string& name,
     const int& workTime, const int& salary, const Positions& position,
     Project* project): Employee(id, name, workTime, position) {
     this->projects.push_back(project);
+    time_in_proj.push_back(workTime);
     this->salary = salary;
 }
 int ProjectManager::calc_pro_additions(int bonus) {
@@ -33,6 +34,10 @@ SeniorManager::SeniorManager(const int& id, const std::string& name,
     ProjectManager(id, name, workTime[0], salary, position, projects[0]) {
     this->projects = projects;
     this->time_in_proj = workTime;
+    work_time = 0;
+    for (int time_in : this->time_in_proj) {
+        work_time += time_in;
+    }
 }
 
 int SeniorManager::calc_Heads() {

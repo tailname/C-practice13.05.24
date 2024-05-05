@@ -15,6 +15,7 @@ class Factory_Staff {
      std::vector<Employee*> empl;
      void MakeProjects();
  public:
+    ~Factory_Staff();
     void make_staff();
     std::vector<Employee*> GetStaff();
 };
