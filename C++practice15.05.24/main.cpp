@@ -11,7 +11,9 @@ int main() {
 
     std::vector<Employee*> empls = fs.GetStaff();
     for (Employee* emp : empls) {
+        emp->calc();
+    }
+    for (Employee* emp : empls) {
         emp->print_info();
     }
-    std::cout << "Hello World!\n";
 }

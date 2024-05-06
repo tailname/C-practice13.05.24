@@ -22,8 +22,10 @@ Employee::Employee(int id, std::string name,
 int Employee::GetID() const {
     return id;
 }
-void Employee::print_info() {
+void Employee::calc() {
     payment = calc_salary();
+}
+void Employee::print_info() {
     std::cout << "ID - " << GetID() << " Name - " << name <<
                  " Time at work - " <<
                  work_time << " h " << " Position - " <<

@@ -34,6 +34,7 @@ class Employee {
     int GetID() const;
     virtual int calc_salary() = 0;
     void print_info();
+    void calc();
  private:
     int id;
  protected:
